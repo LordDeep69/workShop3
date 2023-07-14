@@ -1,0 +1,12 @@
+.MBanner{
+    &__mobile {
+        display: flex;
+    }
+    &__desktop {
+        display: flex;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+    }
+}
