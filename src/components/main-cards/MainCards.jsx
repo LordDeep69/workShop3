@@ -15,10 +15,10 @@ const MainCards = () => {
 
   useEffect(() => {
     if (previousWidth < 1000 && responsive.width >= 1000) {
-      console.log('Al toque, mi rey, finos, esta es. 👌');
+      
       setListImg(desktop);
     } else if (previousWidth >= 1000 && responsive.width < 1000) {
-      console.log('Pantalla Chica, mi papá, como la que tienes. Je, je. ;). 😂');
+      
       setListImg(mobile);
     }
     setPreviousWidth(responsive.width);
