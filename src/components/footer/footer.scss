@@ -37,7 +37,8 @@
     }
     &__logo{
         padding: 3rem 0rem 1rem 0rem;
-        font-size: 2.4rem;
+        font-size: 2rem;
+        font-family: $font1;
         @include mobile{
             padding: .7rem;
             align-self: flex-start;
@@ -81,7 +82,7 @@
             }
             &__ol-li{
                 list-style-type: none;
-                padding: .7rem;
+                padding: .7rem 1rem;
                 cursor: pointer;
                 position: relative;
             }
