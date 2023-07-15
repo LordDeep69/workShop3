@@ -44,12 +44,18 @@
                     
                     .spanMain {
                         height: 32px;
-                    color: white;
+                    
                     margin: 0;
                     padding: 0vw 3vw;
-                    background-color: black;
-                    border: none;
-                    cursor: pointer;
+
+
+                    &:hover
+                    {
+                        background-color: black;
+                        color: white;
+                        border: none;
+                        cursor: pointer;
+                    }
                     }
                 }
         
