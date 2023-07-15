@@ -8,7 +8,7 @@
     gap: 7vw;
     @media screen and (min-width: 1000px) 
     {
-        margin: 50px;
+        margin: 10%;
     }
     
     .card__container
@@ -51,7 +51,7 @@
                         height: 32px;
                     
                     margin: 0;
-                    padding: 0vw 3vw;
+                    padding: 1vw 2vw;
 
 
                     &:hover
@@ -78,13 +78,14 @@
 
     .spanMain
     {
-        font-family: $font2;
+        font-family: $font1;
+        letter-spacing: 3px;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 3vw 12vw;
-        border: 2px solid purple;
+        padding: 4vw 12vw;
+        border: 2px solid $very-dark-gray;
         max-width: 100%; /* Ajusta el valor según tus necesidades */
         margin: auto; /* Centra horizontalmente el elemento */
        
