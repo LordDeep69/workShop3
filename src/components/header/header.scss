@@ -1,0 +1,56 @@
+@import "../../assets/styles/variables.scss";
+
+header {
+    background-image: url(../../assets/mobile/image-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .header--title {
+        border: solid 3px $white;
+        width: 90%;
+        padding: 1.5rem;
+        opacity: 80%;
+        margin-top: 40%;
+        h1{
+            font-size: 3rem;
+            font-family: $font2;
+            text-transform: uppercase;
+            color: $white;
+
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    header {
+        background-image: url(../../assets/desktop/image-hero.jpg);
+        .header--title {
+            width: 50%;
+            margin: 3rem 10%;
+            align-self: flex-start;
+            padding: 2.5rem;
+            h1{
+                font-size: 4rem;
+                line-height: 5rem;
+            }
+        }
+    }
+    
+}
+@media (min-width: 500px) and (max-width: 900px) {
+    header {
+        .header--title {
+            width: 70%;
+            margin: 20% 10%;
+            padding: 2.5rem;
+            h1{
+                line-height: 4rem;
+            }
+        }
+    }
+}
