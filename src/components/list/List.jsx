@@ -1,13 +1,18 @@
 import React from "react";
+import './list.scss';
 
-const List = () => {
+const List = ({ list , className}) => {
   return (
     <div className="lista">
-      <ol className="lista__ol">
-        {list.map((tarea) => (
-          <li className="lista__ol-li" key={tarea.id}></li>
+      <ol className={`lista__ol ${className}`}>
+        {list.map((listado) => (
+          <li className={`lista__ol-li ${className}`} key={listado.id}>
+            {listado.name}
+            {listado.img}
+          </li>
         ))}
       </ol>
+      
     </div>
   );
 };

@@ -1,0 +1,130 @@
+@import "../../assets/styles/variables.scss";
+
+@mixin mobile {
+    @media (min-width: 500px) and (max-width: 900px) {
+      @content;
+    }
+  }
+@mixin desktop {
+    @media (min-width: 900px) {
+      @content;
+    }
+}
+.footer{
+    background-color: $black;
+    color: $white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: $font2;
+    @include mobile{
+        height: 10rem;
+        width: 100%;
+       flex-direction: column;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       padding: 2.1rem;
+    }
+    @include desktop{
+        height: 10rem;
+        width: 100%;
+       flex-direction: column;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       padding: 2.1rem;
+    }
+    &__logo{
+        padding: 3rem 0rem 1rem 0rem;
+        @include mobile{
+            padding: .7rem;
+            align-self: flex-start;
+        }
+        @include desktop{
+            padding: .7rem;
+            align-self: flex-start;
+        }
+        h2{
+            color: $white;
+            font-family: $font1;
+            font-size: 1.5rem;
+            font-weight: 100;
+            @include mobile{
+                text-align: start;
+            }
+            @include desktop{
+                text-align: start;
+            }
+        }
+    }
+    &__menu{
+        padding: .4rem;
+        @include mobile{
+            padding: 0;
+            align-self: flex-start;
+        }
+        @include desktop{
+            padding: 0;
+            align-self: flex-start;
+        }
+        .lista{
+            &__ol{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include mobile{
+                    flex-direction: row;
+                }
+                @include desktop{
+                    flex-direction: row;
+                }
+            }
+            &__ol-li{
+                list-style-type: none;
+                padding: .7rem;
+                cursor: pointer;
+            }
+            &__ol-li:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    &__media{
+        padding: .3rem;
+        @include mobile{
+            padding: 0;
+            align-self: flex-end;
+        }
+        @include desktop{
+            padding: 0;
+            align-self: flex-end;
+        }
+        .lista{
+            &__ol{
+                display: flex;
+            }
+            &__ol-li{
+                list-style-type: none;
+                padding: .7rem;
+                cursor: pointer;
+            }
+            &__ol-li:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__rights{
+        padding: 0 3rem 3rem 3rem;
+        font-size: 12px;
+        @include mobile{
+            padding: .7rem;
+            align-self: flex-end;
+            
+        }
+        @include desktop{
+            padding: .7rem;
+            align-self: flex-end;
+        }
+
+    }
+
+}
