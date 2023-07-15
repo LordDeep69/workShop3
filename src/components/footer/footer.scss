@@ -17,24 +17,27 @@
     align-items: center;
     flex-direction: column;
     font-family: $font2;
+    margin-top: 5rem;
+
     @include mobile{
         height: 10rem;
         width: 100%;
        flex-direction: column;
        flex-wrap: wrap;
        justify-content: space-between;
-       padding: 2.1rem;
+       padding: 4rem;
     }
     @include desktop{
-        height: 10rem;
+        height: 13rem;
         width: 100%;
        flex-direction: column;
        flex-wrap: wrap;
        justify-content: space-between;
-       padding: 2.1rem;
+       padding: 3rem 8rem;
     }
     &__logo{
         padding: 3rem 0rem 1rem 0rem;
+        font-size: 2.4rem;
         @include mobile{
             padding: .7rem;
             align-self: flex-start;
@@ -46,8 +49,6 @@
         h2{
             color: $white;
             font-family: $font1;
-            font-size: 1.5rem;
-            font-weight: 100;
             @include mobile{
                 text-align: start;
             }
@@ -82,9 +83,16 @@
                 list-style-type: none;
                 padding: .7rem;
                 cursor: pointer;
+                position: relative;
             }
-            &__ol-li:hover{
-                text-decoration: underline;
+            &__ol-li:hover::after {
+                content: '';
+                position: absolute;
+                width: 60%;
+                height: 2px;
+                bottom: -1px;
+                left: 20%;
+                background-color: $white;
             }
         }
     }
@@ -106,21 +114,31 @@
                 list-style-type: none;
                 padding: .7rem;
                 cursor: pointer;
+                position: relative;
+                align-items: center;
             }
-            &__ol-li:hover {
-                text-decoration: underline;
+            &__ol-li:hover::after {
+                content: '';
+                position: absolute;
+                width: 60%;
+                height: 2px;
+                bottom: -1px;
+                left: 20%;
+                background-color: $white;
             }
         }
     }
     &__rights{
         padding: 0 3rem 3rem 3rem;
         font-size: 12px;
+        opacity: 80%;
         @include mobile{
             padding: .7rem;
             align-self: flex-end;
             
         }
         @include desktop{
+            font-size: 14px;
             padding: .7rem;
             align-self: flex-end;
         }
