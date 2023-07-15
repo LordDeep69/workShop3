@@ -18,14 +18,6 @@
     flex-direction: column;
     font-family: $font2;
     margin-top: 5rem;
-    @include mobile{
-        height: 10rem;
-        width: 100%;
-       flex-direction: column;
-       flex-wrap: wrap;
-       justify-content: space-between;
-       padding: 4rem;
-    }
     @include desktop{
         height: 13rem;
         width: 100%;
@@ -36,16 +28,8 @@
     }
     &__logo{
         padding: 3rem 0rem 1rem 0rem;
-<<<<<<< HEAD
-        font-size: 2.4rem;
-=======
         font-size: 2rem;
->>>>>>> 476af7141422fb061e49b6157ad4f417408b16b4
         font-family: $font1;
-        @include mobile{
-            padding: .7rem;
-            align-self: flex-start;
-        }
         @include desktop{
             padding: .7rem;
             align-self: flex-start;
@@ -53,9 +37,6 @@
         h2{
             color: $white;
             font-family: $font1;
-            @include mobile{
-                text-align: start;
-            }
             @include desktop{
                 text-align: start;
             }
@@ -63,10 +44,6 @@
     }
     &__menu{
         padding: .4rem;
-        @include mobile{
-            padding: 0;
-            align-self: flex-start;
-        }
         @include desktop{
             padding: 0;
             align-self: flex-start;
@@ -76,16 +53,13 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                @include mobile{
-                    flex-direction: row;
-                }
                 @include desktop{
                     flex-direction: row;
                 }
             }
             &__ol-li{
                 list-style-type: none;
-                padding: .7rem 1rem;
+                padding: .7rem;
                 cursor: pointer;
                 position: relative;
             }
@@ -102,10 +76,6 @@
     }
     &__media{
         padding: .3rem;
-        @include mobile{
-            padding: 0;
-            align-self: flex-end;
-        }
         @include desktop{
             padding: 0;
             align-self: flex-end;
@@ -136,11 +106,6 @@
         padding: 0 3rem 3rem 3rem;
         font-size: 12px;
         opacity: 80%;
-        @include mobile{
-            padding: .7rem;
-            align-self: flex-end;
-            
-        }
         @include desktop{
             font-size: 14px;
             padding: .7rem;
