@@ -36,7 +36,11 @@
     }
     &__logo{
         padding: 3rem 0rem 1rem 0rem;
+<<<<<<< HEAD
         font-size: 2.4rem;
+=======
+        font-size: 2rem;
+>>>>>>> 476af7141422fb061e49b6157ad4f417408b16b4
         font-family: $font1;
         @include mobile{
             padding: .7rem;
@@ -81,7 +85,7 @@
             }
             &__ol-li{
                 list-style-type: none;
-                padding: .7rem;
+                padding: .7rem 1rem;
                 cursor: pointer;
                 position: relative;
             }

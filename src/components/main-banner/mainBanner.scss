@@ -48,7 +48,6 @@
         }
         @include desktop{
             display: flex;
-            width: 60%;
             margin: 9rem; 
         }
     }
@@ -67,10 +66,10 @@
             bottom: 17rem;
         }
         @include desktop{
-            padding: 5rem 0rem 0rem 5rem;
+            padding: 5rem 0rem 3rem 5rem;
             background-color: $white;
             position: relative;
-            width: 35rem;
+            width: 43rem;
             left: 48rem;
             bottom: 30rem;
             margin: 0;
