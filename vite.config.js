@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
 
-  base: '/',
-  // base: 'https://LordDeep69.github.io/workShop3'
+  
+  base: 'https://LordDeep69.github.io/workShop3',
 })
